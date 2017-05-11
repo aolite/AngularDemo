@@ -26,11 +26,16 @@ var HEROES: Hero[] = [
 export class HelloComponent {
 
   public title: string;
-
+  public selectedHero: Hero;
   public heroes = HEROES;
+
 
   constructor() {
     this.title = 'Tour of heroes';
+  }
+
+  onSelect (hero: Hero): void {
+    this.selectedHero = hero;
   }
 }
 
