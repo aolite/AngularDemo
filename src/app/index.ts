@@ -4,6 +4,7 @@ import {routing, RootComponent} from './routes';
 import { FormsModule }   from '@angular/forms';
 
 import {HelloComponent} from './hello';
+import { HeroDetailComponent } from './hero-detail.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import {HelloComponent} from './hello';
   ],
   declarations: [
     RootComponent,
-    HelloComponent
+    HelloComponent,
+    HeroDetailComponent
   ],
   bootstrap: [RootComponent]
 })
