@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 
-import { HeroService } from './hero.service';
 
 export class Hero {
   id: number;
@@ -11,30 +10,14 @@ export class Hero {
   selector: 'fountain-app',
   styleUrls: ['app/hello.css'],
   template: require('./hello.html'),
-  providers: [HeroService]
 })
+
 export class HelloComponent {
 
   public title: string;
-  public selectedHero: Hero;
-  public heroes: Hero[];
 
-
-  constructor(private heroService: HeroService) {
+  constructor() {
     this.title = 'Tour of heroes';
   }
-
-  onSelect (hero: Hero): void {
-    this.selectedHero = hero;
-  }
-
-  getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-  }
-
-  ngOnInit(): void {
-    this.getHeroes();
-  }
-
 }
 
