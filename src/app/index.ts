@@ -10,12 +10,16 @@ import { HeroesComponent } from './heroes.component';
 import {DashboardComponent} from './dashboard.component';
 import {HeroService} from './hero.service';
 
+import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     routing
   ],
   declarations: [
