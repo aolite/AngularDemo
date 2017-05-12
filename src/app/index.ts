@@ -12,6 +12,7 @@ import {HeroService} from './hero.service';
 
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import {HeroSearchComponent} from './hero-search.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { InMemoryDataService }  from './in-memory-data.service';
     HelloComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   providers: [ HeroService ],
   bootstrap: [RootComponent]
