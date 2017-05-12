@@ -10,6 +10,7 @@ import {HeroService} from './hero.service';
 @Component({
   selector: 'hero-detail',
   template: require('./hero-detail.html'),
+  styleUrls: ['app/hero-detail.css'],
   providers: [HeroService]
 })
 export class HeroDetailComponent implements OnInit {

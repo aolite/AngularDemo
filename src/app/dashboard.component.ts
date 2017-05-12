@@ -5,7 +5,7 @@ import {Hero} from "./hello";
 
 @Component({
   selector: 'my-dashboard',
-  styleUrls: ['app/hello.css'],
+  styleUrls: ['app/dashboard.css'],
   template: require('./dashboard.html'),
   providers: [HeroService]
 })
